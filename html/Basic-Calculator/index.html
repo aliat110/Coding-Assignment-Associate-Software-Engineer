@@ -1,0 +1,69 @@
+<!-- A. Create a basic calculator using HTML, CSS, and JavaScript with the functionality of add,
+    subtract, multiply and divide. Use the following picture for reference. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Basic Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <form name="calculator">
+        <div class="result-clear">
+          <input type="text" class="result" id="temp" name="answer" />
+          <input
+            type="button"
+            value="C"
+            class="clear"
+            onclick="clearResult()"
+          />
+        </div>
+        <div class="grid-buttons">
+          <input type="button" value="9" onclick="appendToResult('9')" />
+          <input type="button" value="8" onclick="appendToResult('8')" />
+          <input type="button" value="7" onclick="appendToResult('7')" />
+          <input
+            type="button"
+            value="+"
+            onclick="appendOperator('+')"
+            class="math"
+          />
+          <br />
+          <input type="button" value="4" onclick="appendToResult('4')" />
+          <input type="button" value="5" onclick="appendToResult('5')" />
+          <input type="button" value="6" onclick="appendToResult('6')" />
+          <input
+            type="button"
+            value="-"
+            onclick="appendOperator('-')"
+            class="math"
+          />
+          <br />
+          <input type="button" value="1" onclick="appendToResult('1')" />
+          <input type="button" value="2" onclick="appendToResult('2')" />
+          <input type="button" value="3" onclick="appendToResult('3')" />
+          <input
+            type="button"
+            value="/"
+            onclick="appendOperator('/')"
+            class="math"
+          />
+          <br />
+          <input type="button" value="." onclick="appendToResult('.')" />
+          <input type="button" value="0" onclick="appendToResult('0')" />
+          <input type="button" value="=" onclick="calculateResult()" />
+          <input
+            type="button"
+            value="x"
+            onclick="appendOperator('*')"
+            class="math"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
