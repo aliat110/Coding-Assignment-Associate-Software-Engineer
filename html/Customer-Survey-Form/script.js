@@ -19,33 +19,33 @@ function validateForm() {
   ) {
     alert(
       "You entered the following details\n" +
-      "First Name:- " +
-      firstName +
-      "\n" +
-      "Last Name:- " +
-      lastName +
-      "\n" +
-      "Date of Bith:- " +
-      date +
-      "\n" +
-      "Country :- " +
-      selectedCountry +
-      "\n" +
-      "Gender :-" +
-      gender +
-      "\n" +
-      "Profession :- " +
-      profession +
-      "\n" +
-      "Email :- " +
-      email +
-      "\n" +
-      "Phone :- " +
-      phone
+        "First Name:- " +
+        firstName +
+        "\n" +
+        "Last Name:- " +
+        lastName +
+        "\n" +
+        "Date of Bith:- " +
+        date +
+        "\n" +
+        "Country :- " +
+        selectedCountry +
+        "\n" +
+        "Gender :-" +
+        gender +
+        "\n" +
+        "Profession :- " +
+        profession +
+        "\n" +
+        "Email :- " +
+        email +
+        "\n" +
+        "Phone :- " +
+        phone
     );
+    var clearInputs = document.querySelectorAll("input");
+    clearInputs.forEach((singleInput) => (singleInput.value = ""));
   }
-  var clearInputs = document.querySelectorAll("input");
-  clearInputs.forEach((singleInput) => (singleInput.value = ""));
 }
 
 document.addEventListener("DOMContentLoaded", () => {
