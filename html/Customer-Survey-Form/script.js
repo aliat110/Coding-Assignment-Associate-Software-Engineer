@@ -9,6 +9,8 @@ function validateForm() {
   var email = document.getElementById("email").value;
   var phone = document.getElementById("phone").value;
 
+  
+
   if (
     firstName != "" &&
     lastName != "" &&
