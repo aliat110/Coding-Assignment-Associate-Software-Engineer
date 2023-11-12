@@ -2,6 +2,7 @@ let str = "";
 let opcount = 0;
 function appendToResult(value) {
   str += value;
+  str = str.toString().replace(/^0+/, '');
   document.getElementById("temp").value = str;
 }
 
@@ -27,6 +28,6 @@ function calculateResult() {
 
 function clearResult() {
   str = "";
-  document.getElementById("temp").value = "";
+  document.getElementById("temp").value = "0";
   opcount=0;
 }
